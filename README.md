@@ -26,6 +26,16 @@ Please report bugs by opening an issue
 
 Contributions are welcome and are encouraged!
 
+## Django settting for egg loader
+
+```python
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.eggs.Loader',
+)
+```
+
 ## Special Thanks
 Thanks to [BNOTIONS](http://www.bnotions.com) for sponsoring initial development time.
 
